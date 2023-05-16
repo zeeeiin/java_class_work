@@ -1,0 +1,32 @@
+package baekjoon;
+
+import java.io.*;
+import java.util.*;
+
+public class String07 {
+
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st;
+		
+		int count = Integer.parseInt(br.readLine());
+		st = new StringTokenizer(br.readLine());
+		int num = Integer.parseInt(st.nextToken());
+		char[] arrStr = st.nextToken().toCharArray();
+		
+		for(int i=0; i<arrStr.length; i++) {			
+			for(int j=0; j<count; j++) {
+				bw.write(arrStr[i]);
+			}
+			
+		}
+		
+		
+		bw.flush();
+		bw.close();
+
+	}
+
+}

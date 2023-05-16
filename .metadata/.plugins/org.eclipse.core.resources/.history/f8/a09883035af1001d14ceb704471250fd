@@ -1,0 +1,16 @@
+package baekjoon;
+
+import java.util.*;
+
+public class star {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("별 개수 >");
+		int count = scan.nextInt();
+		
+	}
+
+}

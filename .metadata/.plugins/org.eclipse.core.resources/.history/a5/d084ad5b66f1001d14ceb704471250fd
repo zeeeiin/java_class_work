@@ -1,0 +1,25 @@
+package baekjoon;
+
+import java.io.*;
+
+public class String08 {
+
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+		String[] arrStr = br.readLine().trim().split(" ");
+
+		if(arrStr[0]).equals(" ")) {
+			bw.write(Integer.toString(0));
+		} else {
+			bw.write(Integer.toString(arrStr.length));
+		}
+
+		bw.flush();
+		bw.close();
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package programers;
+
+public class CtrlZ {
+
+	public static void main(String[] args) {
+		
+		String str = "10 Z 20 Z 1";
+		String[] arrStr = str.split(" ");
+		
+		int[] arrInt = new int[str.length()];
+		
+		int sum = 0;
+		
+		for(int i=0; i<arrInt.length; i++) {			
+			arrInt[i] = Integer.parseInt(arrStr[i]);
+			
+			if(arrStr[i].equals("Z")) {
+				sum -= arrInt[i-1];
+			} else {
+				sum += arrInt[i];
+			}
+			
+		}
+		
+		for(int i=0; i<arrInt.length; i++) {
+			
+			
+			
+		}
+
+	}
+
+}

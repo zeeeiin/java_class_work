@@ -1,0 +1,10 @@
+package day17.api.thread;
+
+public class ThreadTest implements Runnable {
+	
+	@Override
+	public void run() {
+		
+	}
+
+}

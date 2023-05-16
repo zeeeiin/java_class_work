@@ -1,0 +1,40 @@
+package study;
+
+import java.util.*;
+
+public class BJ2563 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		//검은색 색종이 개수
+		int count = scan.nextInt();
+		
+		//2차원 배열 
+		int[][] arrInt = new int[count][count];
+		
+		int[] width = new int[count];
+		int[] length = new int[count];
+		
+		for(int i=0; i<count; i++) {
+			int x = scan.nextInt();
+			int y = scan.nextInt();
+			
+			for(int j=0; j<10; j++) {
+				width[j] = x + j;
+				length[j] = y + j;
+			}
+			
+			
+		}
+		
+		//전체 - 겹치는 부분
+		int all = count*100;
+		int parse = 0;
+		
+		int result = all - parse;
+
+	}
+
+}
